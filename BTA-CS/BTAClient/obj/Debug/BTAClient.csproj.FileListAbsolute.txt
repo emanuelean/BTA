@@ -53,7 +53,6 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Net.Http.Formatting
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Web.Http.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Web.Http.SelfHost.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Web.Http.WebHost.dll
-C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\BTAServer.pdb
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\BTAServer.exe.config
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\EntityFramework.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\EntityFramework.SqlServer.xml
@@ -67,7 +66,6 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Net.Http.Formatting
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Web.Http.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Web.Http.SelfHost.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.Web.Http.WebHost.xml
-C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\obj\Debug\BTAClient.csprojResolveAssemblyReference.cache
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\obj\Debug\BTAClient.csproj.CoreCompileInputs.cache
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\obj\Debug\BTAClient.exe
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\obj\Debug\BTAClient.pdb
@@ -75,3 +73,5 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\Microsoft.Diagnostics.Trac
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\RabbitMQ.Client.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\RabbitMQ.Client.xml
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\BTAServer.pdb
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\obj\Debug\BTAClient.csprojResolveAssemblyReference.cache
