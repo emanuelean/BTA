@@ -58,7 +58,6 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Net.Http.Formatting
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Web.Http.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Web.Http.SelfHost.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Web.Http.WebHost.xml
-C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.csprojResolveAssemblyReference.cache
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.csproj.CoreCompileInputs.cache
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.exe
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.pdb
@@ -66,3 +65,4 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\Microsoft.Diagnostics.Trac
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\RabbitMQ.Client.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\RabbitMQ.Client.xml
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.csprojResolveAssemblyReference.cache
