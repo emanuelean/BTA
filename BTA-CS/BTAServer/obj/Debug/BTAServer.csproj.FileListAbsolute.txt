@@ -65,4 +65,7 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\Microsoft.Diagnostics.Trac
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\RabbitMQ.Client.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\RabbitMQ.Client.xml
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\MySql.Data.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\MySql.Data.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.csprojResolveAssemblyReference.cache

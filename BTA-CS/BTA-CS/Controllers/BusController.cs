@@ -4,51 +4,23 @@ using System.Threading.Tasks;
 using BTA_CS.Entities;
 using System.Web.Http;
 using System.Web.Http.Description;
-using System;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System.Text;
+using System;
 
 namespace BTA_CS.Controllers
 {
-    public class BusController : ApiController 
+    public class BusController : ApiController
     {
-        static string myConnectionString = "server=127.0.0.1;uid=root;" +
-    "pwd=123456789;database=test";
-
+        static string myConnectionString = "server=localhost;database=bus-transportation-app;uid=root;password=123456789;MultipleActiveResultSets=True";
+        //connectionString="server=localhost;port=3306;database=mycontext;uid=root;password=********"/>
+        //"server=localhost;port=3305;database=parking;uid=root";
         private BTAContext db = new BTAContext(myConnectionString);
 
-        public static void getBusLocation()
+        public BusController()
         {
-            var factory = new ConnectionFactory() { HostName = "localhost" };
-            using (var connection = factory.CreateConnection())
-            using (var channel = connection.CreateModel())
-            {
-                channel.QueueDeclare(queue: "busLocationMQ",
-                                     durable: false,
-                                     exclusive: false,
-                                     autoDelete: false,
-                                     arguments: null);
 
-                var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (model, ea) =>
-                {
-                    var body = ea.Body;
-                    var message = Encoding.UTF8.GetString(body);
-                    //Console.WriteLine(" [x] Received {0}", message);
-                };
-                channel.BasicConsume(queue: "busLocationMQ",
-                                     autoAck: true,
-                                     consumer: consumer);
-
-                //Console.WriteLine(" Press [enter] to exit.");
-                //Console.ReadLine();
-            }
         }
-
-
         // GET: api/Bus
         public IQueryable<Bus> GetBuses()
         {
@@ -59,12 +31,15 @@ namespace BTA_CS.Controllers
         [ResponseType(typeof(Bus))]
         public async Task<IHttpActionResult> GetBus(int id)
         {
+            Console.WriteLine("EnteredGetBus");
             Bus bus = await db.Bus.FindAsync(id);
+            Console.WriteLine("gotBus!");
             if (bus == null)
             {
+                Console.WriteLine("ExitGetBusForced");
                 return NotFound();
             }
-
+            Console.WriteLine("ExitGetBus");
             return Ok(bus);
         }
 
@@ -114,6 +89,7 @@ namespace BTA_CS.Controllers
 
             db.Bus.Add(bus);
             await db.SaveChangesAsync();
+            Console.WriteLine(db.GetType());
 
             return CreatedAtRoute("DefaultApi", new { id = bus.ID }, bus);
         }
@@ -143,14 +119,9 @@ namespace BTA_CS.Controllers
             base.Dispose(disposing);
         }
 
-        private bool BusExists(int id)
+        public bool BusExists(int id)
         {
             return db.Bus.Count(e => e.ID == id) > 0;
-        }
-
-        public static void Main()
-        {
-            getBusLocation();
         }
     }
 }

@@ -101,3 +101,9 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\BTA-CS.exe.config
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\BTA-CS.exe
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\obj\Debug\BTA-CS.exe
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\obj\Debug\BTA-CS.csprojResolveAssemblyReference.cache
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\BTAServer.exe
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\BTAServer.pdb
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\BTAServer.exe.config
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\MySql.Data.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\MySql.Data.Entity.EF6.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\MySql.Data.xml
