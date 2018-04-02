@@ -107,3 +107,6 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\BTAServer.exe.config
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\MySql.Data.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\MySql.Data.Entity.EF6.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\MySql.Data.xml
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\RestSharp.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\System.ValueTuple.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTA-CS\bin\System.ValueTuple.xml

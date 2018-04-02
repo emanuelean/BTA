@@ -27,8 +27,8 @@ namespace BTA_CS.Controllers
             var stop = from b in db.Stop
                        select new StopDTO()
                        {
-                            Id = b.ID,
-                            Name = b.Name,
+                            Id = b.id,
+                            Name = b.name,
                         };
 
             return stop;
@@ -38,13 +38,13 @@ namespace BTA_CS.Controllers
         [ResponseType(typeof(StopDetailDTO))]
         public async Task<IHttpActionResult> GetStop(int id)
         {
-            var stop = await db.Stop.Include(b => b.Name).Select(b =>
+            var stop = await db.Stop.Include(b => b.name).Select(b =>
                 new StopDetailDTO()
                 {
-                    Id = b.ID,
-                    Name = b.Name,
-                    Latitude = b.Latitude,
-                    Longitude = b.Longitude
+                    Id = b.id,
+                    Name = b.name,
+                    Latitude = b.latitide,
+                    Longitude = b.longitude
                 }).SingleOrDefaultAsync(b => b.Id == id);
             if (stop == null)
             {
@@ -63,7 +63,7 @@ namespace BTA_CS.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != stop.ID)
+            if (id != stop.id)
             {
                 return BadRequest();
             }
@@ -105,11 +105,11 @@ namespace BTA_CS.Controllers
 
             var dto = new StopDTO()
             {
-                Id = stop.ID,
-                Name = stop.Name,
+                Id = stop.id,
+                Name = stop.name,
             };
 
-            return CreatedAtRoute("DefaultApi", new { id = stop.ID }, dto);
+            return CreatedAtRoute("DefaultApi", new { id = stop.id }, dto);
         }
 
         // DELETE: api/Stops/5
@@ -139,7 +139,7 @@ namespace BTA_CS.Controllers
 
         private bool StopExists(int id)
         {
-            return db.Stop.Count(e => e.ID == id) > 0;
+            return db.Stop.Count(e => e.id == id) > 0;
         }
     }
 }

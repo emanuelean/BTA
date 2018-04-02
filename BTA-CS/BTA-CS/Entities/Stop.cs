@@ -7,13 +7,13 @@ namespace BTA_CS.Entities
 {
     public class Stop : IEntity
     {
-        public int ID { get; set; }
+        public int id { get; set; }
 
-        public String Name { get; set; }
-        public float Latitude { get; set; }
-        public float Longitude { get; set; }
+        public String name { get; set; }
+        public float latitide { get; set; }
+        public float longitude { get; set; }
 
-        public int BusID { get; set; }
+        public int busID { get; set; }
         public Bus Bus { get; set; }
     }
 }

@@ -68,4 +68,6 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\RabbitMQ.Client.xml
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\MySql.Data.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\MySql.Data.xml
-C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.csprojResolveAssemblyReference.cache
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\RestSharp.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.ValueTuple.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.ValueTuple.xml

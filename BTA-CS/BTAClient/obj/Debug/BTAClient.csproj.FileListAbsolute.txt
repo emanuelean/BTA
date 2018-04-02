@@ -78,3 +78,6 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\obj\Debug\BTAClient.csprojResolveAss
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\MySql.Data.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\MySql.Data.xml
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\RestSharp.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.ValueTuple.dll
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAClient\bin\Debug\System.ValueTuple.xml

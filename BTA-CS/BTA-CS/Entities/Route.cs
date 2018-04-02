@@ -7,7 +7,7 @@ namespace BTA_CS.Entities
 {
     public class Route : IEntity
     {
-        public int ID { get; set; }
+        public int id { get; set; }
 
         public Bus Bus { get; set; }
     }

@@ -3,6 +3,8 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using BTAServer;
 using BTA_CS.Controllers;
+using BTA_CS.Entities;
+using System.Web.Script.Serialization;
 
 namespace BTA_CS
 {
@@ -55,20 +57,23 @@ namespace BTA_CS
 
         public static void Main(String[] args)
         {
-            Console.WriteLine("x");
-            busMap = new System.Collections.Generic.Dictionary<int, Location>();
+            //busMap = new System.Collections.Generic.Dictionary<int, Location>();
             //InitMessageQueue("BTA", "localhost");
             //while (true)
             //{
             //    ConsumeQueue();
             //}
 
-            BusController BUS = new BusController();
-            BUS.PostBus(new Entities.Bus(1,"Cool"));
+            //REST toward client:
+            var bus = new Bus();
+            bus.id = 3;
+            bus.name = "Bus Line 3";
 
-            //Console.WriteLine(BUS.BusExists(1));
+            var json = new JavaScriptSerializer().Serialize(bus);
 
-            //Console.ReadLine();
+            BusController controller = new BusController();
+            controller.POST("http://localhost:3000/buses", json);
+
         }
     }
 }
