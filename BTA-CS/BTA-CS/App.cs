@@ -5,6 +5,9 @@ using BTAServer;
 using BTA_CS.Controllers;
 using BTA_CS.Entities;
 using System.Web.Script.Serialization;
+using System.IO;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace BTA_CS
 {
@@ -18,6 +21,19 @@ namespace BTA_CS
         private static IModel channel = null;
         private static String queueName = null;
         private static EventingBasicConsumer consumer = null;
+
+        
+
+        public static List<T> LoadJson<T>()
+        {
+            using (StreamReader r = new StreamReader("C:'\'Users'\'erbas'\'Desktop'\'BTA'\'BTA-CS'\'JSON'\'BTA-JSON-Holder'\'db.json"))
+            {
+                string json = r.ReadToEnd();
+                List<T> items = JsonConvert.DeserializeObject<List<T>>(json);
+                return items;
+            }
+
+        }
 
         private static void InitMessageQueue(String name, String hostName)
         {
@@ -57,22 +73,25 @@ namespace BTA_CS
 
         public static void Main(String[] args)
         {
-            //busMap = new System.Collections.Generic.Dictionary<int, Location>();
-            //InitMessageQueue("BTA", "localhost");
-            //while (true)
-            //{
-            //    ConsumeQueue();
-            //}
 
-            //REST toward client:
-            var bus = new Bus();
-            bus.id = 3;
-            bus.name = "Bus Line 3";
+            var Buses = LoadJson<Bus>();
 
-            var json = new JavaScriptSerializer().Serialize(bus);
+            busMap = new System.Collections.Generic.Dictionary<int, Location>();
+            InitMessageQueue("BTA", "localhost");
+            while (true)
+            {
+                ConsumeQueue();
+            }
 
-            BusController controller = new BusController();
-            controller.POST("http://localhost:3000/buses", json);
+            ////REST toward client:
+            //var bus = new Bus();
+            //bus.id = 3;
+            //bus.name = "Bus Line 3";
+
+            //var json = new JavaScriptSerializer().Serialize(bus);
+
+            //BusController controller = new BusController();
+            //controller.POST("http://localhost:3000/buses", json);
 
         }
     }
