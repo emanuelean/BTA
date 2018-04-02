@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -29,6 +30,8 @@ namespace BTA_CS.Entities
     //    public System.Data.Entity.DbSet<BTA_CS.Entities.Stop> Stops { get; set; }
 
     //}
+
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class BTAContext : DbContext
     {
         public BTAContext(string connectionString) : base(connectionString)

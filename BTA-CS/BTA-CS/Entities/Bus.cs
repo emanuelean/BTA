@@ -7,8 +7,11 @@ namespace BTA_CS.Entities
 {
     public class Bus : IEntity
     {
-        public int ID { get; set; }
+        private int v1;
+        private string v2;
+        
+        public int id { get; set; }
 
-        public string Name { get; set; }
+        public string name { get; set; }
     }
 }

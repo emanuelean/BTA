@@ -7,6 +7,6 @@ namespace BTA_CS.Entities
 {
     public interface IEntity
     {
-        int ID { get; set; }
+        int id { get; set; }
     }
 }
