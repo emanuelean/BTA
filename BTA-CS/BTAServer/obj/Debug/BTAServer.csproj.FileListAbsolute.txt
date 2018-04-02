@@ -167,3 +167,4 @@ C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Xml.XPath.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\bin\Debug\System.Json.dll
 C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.exe.config
+C:\Users\erbas\Desktop\BTA\BTA-CS\BTAServer\obj\Debug\BTAServer.csprojResolveAssemblyReference.cache
